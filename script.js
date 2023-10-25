@@ -71,8 +71,8 @@ canvas.addEventListener("click", () => {
   isPaused = !isPaused;
   document.getElementById('note').style.display = 'none';  //Hide the note
  // Increase the speed on each click
-   ball.dx += 5; 
-   ball.dy += 5;
+   ball.dx += 10; 
+   ball.dy += 10;
 });
 
 document.getElementById("resetButton").addEventListener("click", () => { 
