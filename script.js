@@ -60,6 +60,7 @@ function animate() {
     drawBall();
     updateBallPosition();
   }
+
   animationFrameId = requestAnimationFrame(animate);
 }
 
@@ -70,7 +71,7 @@ function startAnimation() {
 canvas.addEventListener("click", () => {
   isPaused = !isPaused;
   document.getElementById('note').style.display = 'none';  //Hide the note
- // Increase the speed on each click
+    //Increase the speed on each click
    ball.dx += 10; 
    ball.dy += 10;
 });
@@ -81,8 +82,8 @@ document.getElementById("resetButton").addEventListener("click", () => {
   cancelAnimationFrame(animationFrameId);
   isPaused = true;
   clearCanvas();
-  ball.dx = originalSpeedx;  //reset original speed
-  ball.dy = originalSpeedy;
+    ball.dx = originalSpeedx;  //reset original speed
+    ball.dy = originalSpeedy;
   startAnimation(); // Restart the animation
 });
 
